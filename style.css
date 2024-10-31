@@ -1,0 +1,160 @@
+body {
+  background-color: black;
+}
+
+main {
+  background-color: #6f7378;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  background-image: url("https://wallpapercave.com/wp/wp10615937.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* nav-bar */
+.nav-bar {
+  display: grid;
+  grid-template-columns: 0.7fr 0.2fr 0.2fr 0.2fr 3fr 1fr;
+  place-items: center;
+  gap: 1rem;
+  background-color: rgb(0, 0, 0, 0.9);
+  box-shadow: 0px 5px 10px white;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 2px 2px 1px black;
+}
+
+.Home,
+.Series,
+.Kids {
+  color: white;
+  font-size: 1.4rem;
+  text-shadow: 2px 1px 1px rgb(0, 0, 0);
+}
+
+/* search div */
+.search-div {
+  grid-column: 6;
+}
+
+.search {
+  border-radius: 2rem;
+  width: 14rem;
+  background-color: white;
+  border-color: white;
+}
+
+.search::placeholder {
+  padding-left: 1rem;
+}
+
+.add {
+  border-radius: 2rem;
+  background-color: transparent;
+  color: aliceblue;
+  border-color: white;
+  text-shadow: 2px 1px 1px rgb(0, 0, 0);
+}
+
+/* description box */
+.description-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+.poster {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+
+/* description-text-box */
+.description-text-box {
+  display: grid;
+  grid-template-rows: 0.1fr 0.1fr 1fr;
+  color: white;
+}
+
+.title {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.plot {
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  width: 25rem;
+}
+
+/* film type */
+.film-type {
+  display: grid;
+  grid-template-columns: 0.1fr auto 0.1fr 0.15fr 3fr;
+  gap: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.movie-type {
+  color: rgb(15, 176, 15);
+}
+
+.type {
+  color: greenyellow;
+}
+
+.imbd {
+  background-color: gold;
+  height: 1.5rem;
+  color: black;
+  border-radius: 0.3rem;
+}
+
+.rate {
+  color: goldenrod;
+  text-shadow: 2px 1px 2px rgb(0, 0, 0);
+}
+
+/* popular */
+.popular {
+  display: grid;
+  grid-template-rows: 0.1fr 5fr;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+.popular-text {
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.popular-img-div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.popular-img {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.popular-img:hover {
+  opacity: 0.7;
+}
+
+.popular-img-box {
+  width: 14rem;
+  height: 20rem;
+  border-radius: 1rem;
+  background-color: white;
+}
