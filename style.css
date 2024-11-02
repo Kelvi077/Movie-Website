@@ -1,29 +1,29 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: black;
-}
-
-main {
-  background-color: #6f7378;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 1fr 3fr 3fr;
   background-image: url("https://wallpapercave.com/wp/wp10615937.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr repeat(auto-fit, minmax(200rem, 1fr));
+  background-color: rgb(0, 0, 0, 0.9);
 }
 
 /* nav-bar */
 .nav-bar {
   display: grid;
   grid-template-columns: 0.7fr 0.2fr 0.2fr 0.2fr 3fr 1fr;
-  place-items: center;
   gap: 1rem;
-  background-color: rgb(0, 0, 0, 0.9);
+  text-align: center;
   box-shadow: 0px 5px 10px white;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 100%;
   font-weight: bolder;
   color: white;
   text-shadow: 0 0 10px gold, 0 0 20px gold, 2px 2px 1px black;
@@ -33,18 +33,21 @@ main {
 .Series,
 .Kids {
   color: white;
-  font-size: 1.4rem;
+  font-size: 100%;
   text-shadow: 2px 1px 1px rgb(0, 0, 0);
 }
 
 /* search div */
 .search-div {
   grid-column: 6;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
 }
 
 .search {
   border-radius: 2rem;
-  width: 14rem;
   background-color: white;
   border-color: white;
 }
@@ -64,15 +67,15 @@ main {
 /* description box */
 .description-box {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  background-color: rgb(0, 0, 0, 0.9);
+  grid-template-columns: repeat(auto-fit, 10rem minmax(10rem, 1fr));
 }
 
 .poster {
-  width: 15rem;
-  height: 20rem;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
   border-radius: 1rem;
-  padding-left: 1rem;
 }
 
 /* description-text-box */
@@ -92,7 +95,6 @@ main {
 .plot {
   font-size: 1rem;
   font-family: "Times New Roman", Times, serif;
-  width: 25rem;
 }
 
 /* film type */
@@ -126,9 +128,8 @@ main {
 /* popular */
 .popular {
   display: grid;
-  grid-template-rows: 0.1fr 5fr;
+  grid-template-rows: 3rem repeat(auto-fit, minmax(3rem, 1fr));
   color: white;
-  background-color: rgb(0, 0, 0, 0.9);
 }
 
 .popular-text {
@@ -140,11 +141,13 @@ main {
 
 .popular-img-div {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 .popular-img {
-  width: 14rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -153,8 +156,7 @@ main {
 }
 
 .popular-img-box {
-  width: 14rem;
-  height: 20rem;
+  display: block;
   border-radius: 1rem;
   background-color: white;
 }
